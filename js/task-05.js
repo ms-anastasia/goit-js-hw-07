@@ -4,7 +4,7 @@ const outputRef = document.querySelector('#name-output');
 inputRef.addEventListener('input', onInputChange);
 function onInputChange(change) {
     if (inputRef.value === '') {
-        outputRef = 'незнакомец';
+        outputRef.innerHTML = 'незнакомец';
         console.log('');
     }
     else outputRef.textContent = change.currentTarget.value;
